@@ -1,0 +1,1 @@
+SELECT w.id FROM Weather AS w CROSS JOIN Weather AS pw WHERE DATEDIFF(w.recordDate, pw.recordDate) = 1 AND w.temperature > pw.temperature
